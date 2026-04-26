@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Agregar Asset";
+}
+<h1>Agregar Asset</h1>
+
+<form asp-action="Agregar" method="post"> 
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" name="Nombre" />
+    </div>
+    <div class=" form-group mt-3">
+        <label>Descripcion</label>
+        <input type="text" name="Descripcion" />
+    </div>
+    <div class=" form-group mt-3">
+        <label>Imagen</label>
+        <input type="text" name="Imagen" />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Agregar</button>
+</form>

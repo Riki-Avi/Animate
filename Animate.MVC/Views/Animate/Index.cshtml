@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Animate";
+}
+<h1>ASSETS</h1>
+<a class="btn btn-primary" asp-action="Agregar">Agregar</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asset in Model)
+        {
+            <tr>
+                <td>@asset.Nombre</td>
+                <td>@asset.Descripcion</td>
+                <td><img src="~/imagenes/@(asset.Imagen).png" alt="@asset.Nombre" width="150"/></td>
+            </tr>
+        }
+    </tbody>
+</table>

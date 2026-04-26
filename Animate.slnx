@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Animate.Entidad/Animate.Entidad.csproj" />
+  <Project Path="Animate.MVC/Animate.MVC.csproj" />
+  <Project Path="Animate.Servicio/Animate.Servicio.csproj" />
+</Solution>
