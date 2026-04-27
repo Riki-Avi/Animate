@@ -37,3 +37,17 @@ Esto significa que durante toda la ejecucion de la app se comparte una sola inst
 
 - Referencia a `Animate.Entidad`.
 - Target framework: `net10.0`.
+
+## Sesion 2 - Lunes/27
+
+### Ajuste realizado hoy
+
+Se actualizaron los assets iniciales para que el campo `Imagen` use nombres con extension `.png`:
+
+- `samurai.png`
+- `dragon.png`
+- `pezkoi.png`
+
+### Problema resuelto
+
+Con este ajuste se evita inconsistencia entre datos iniciales y render de vistas, permitiendo que las imagenes se muestren correctamente en el listado.

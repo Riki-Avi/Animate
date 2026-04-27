@@ -78,3 +78,25 @@ Perfiles definidos en `Properties/launchSettings.json`:
 - Sin validacion de formulario/modelo.
 - Sin editar/eliminar.
 - Sin autenticacion/autorizacion aplicada a acciones.
+
+## Sesion 2 - Lunes/27
+
+### Cambios aplicados hoy
+
+1. `Views/Animate/Agregar.cshtml`
+   - Formulario actualizado a `multipart/form-data`.
+   - Campo de imagen cambiado de texto a selector de archivo (`type="file"`), limitado a `.png`.
+2. `Controllers/AnimateController.cs`
+   - Constructor preparado para trabajar con `IWebHostEnvironment`.
+   - `POST Agregar` preparado para recibir `IFormFile`.
+   - Validacion de archivo de imagen (`.png`).
+   - Guardado de archivo en `wwwroot/Imagenes`.
+   - Se almacena en `asset.Imagen` el nombre del archivo guardado.
+3. `Views/Animate/Index.cshtml`
+   - Render de imagen ajustado para consumir el nombre real guardado en `asset.Imagen`.
+
+### Problemas resueltos
+
+- Error de compilacion por uso de `_environment` sin inyeccion.
+- Imagenes no visibles en listado por formato de nombre incorrecto.
+- Falsa percepcion de caida por cierre de depuracion (comportamiento del entorno de debug).

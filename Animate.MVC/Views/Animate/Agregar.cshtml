@@ -4,18 +4,18 @@
 }
 <h1>Agregar Asset</h1>
 
-<form asp-action="Agregar" method="post"> 
-    <div class="form-group">
+<form asp-action="Agregar" method="post" enctype="multipart/form-data"> 
+    <div class="form-group mt-3">
         <label>Nombre</label>
         <input type="text" name="Nombre" />
     </div>
-    <div class=" form-group mt-3">
+    <div class="form-group mt-3">
         <label>Descripcion</label>
         <input type="text" name="Descripcion" />
     </div>
-    <div class=" form-group mt-3">
-        <label>Imagen</label>
-        <input type="text" name="Imagen" />
+    <div class="form-group mt-3">
+        <label>Imagen (.png)</label>
+        <input type="file" name="imagenFile" accept=".png" class="form-control" />
     </div>
     <button type="submit" class="btn btn-primary mt-3">Agregar</button>
 </form>

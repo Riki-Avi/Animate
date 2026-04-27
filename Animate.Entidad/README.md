@@ -24,3 +24,7 @@ Este proyecto define el contrato de datos compartido por:
 - No contiene logica de negocio ni persistencia.
 - Se usa `Nullable` habilitado y `ImplicitUsings` habilitado.
 - Target framework: `net10.0`.
+
+## Sesion 2 - Lunes/27
+
+Hoy no hubo cambios estructurales en la entidad `Asset`. Se mantuvo el mismo contrato (`Id`, `Nombre`, `Descripcion`, `Imagen`) para soportar la carga de imagenes PNG resuelta en la capa MVC.

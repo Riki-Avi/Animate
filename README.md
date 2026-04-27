@@ -62,3 +62,24 @@ URL local (segun `launchSettings.json`):
 - `Animate.Entidad/README.md`
 - `Animate.Servicio/README.md`
 - `Animate.MVC/README.md`
+
+## Sesion 2 - Lunes/27
+
+Hoy se trabajo en el flujo de carga de imagenes PNG para assets y en el diagnostico de errores durante pruebas locales.
+
+### Lo que hicimos
+
+1. Se cambio el formulario de alta para usar seleccion de archivo:
+   - `enctype="multipart/form-data"`
+   - `input type="file"` con `accept=".png"`
+2. Se ajusto el `POST` de `Agregar` para recibir `IFormFile`.
+3. Se implemento la validacion de archivo para aceptar PNG.
+4. Se definio el guardado fisico en `wwwroot/Imagenes`.
+5. Se adapto el listado para mostrar la ruta de imagen con el nombre guardado.
+6. Se corrigieron los datos iniciales para usar nombres con extension `.png`.
+
+### Problemas que resolvimos
+
+- Error por `_environment` no disponible en el controlador: se resolvio inyectando `IWebHostEnvironment`.
+- Imagenes que no cargaban al listar por inconsistencia de nombre/extension: se resolvio unificando el formato.
+- Confusion de "caida del servidor": se identifico que en depuracion el proceso se detenia por comportamiento del entorno, no por la logica de subida.

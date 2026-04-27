@@ -14,9 +14,9 @@
         {
             _assets = new List<Animate.Entidad.Asset>
             {
-                new Animate.Entidad.Asset { Id = 1, Nombre = "Samurai", Descripcion = "Samurai listo pa pelear (parece enojado)", Imagen = "samurai" },
-                new Animate.Entidad.Asset { Id = 2, Nombre = "Dragon", Descripcion = "Dragón rojo (Cabeza)", Imagen = "dragon" },
-                new Animate.Entidad.Asset { Id = 3, Nombre = "Pez Koi", Descripcion = "Pez Koi (lindo)", Imagen = "pezkoi" }
+                new Animate.Entidad.Asset { Id = 1, Nombre = "Samurai", Descripcion = "Samurai listo pa pelear (parece enojado)", Imagen = "samurai.png" },
+                new Animate.Entidad.Asset { Id = 2, Nombre = "Dragon", Descripcion = "Dragón rojo (Cabeza)", Imagen = "dragon.png" },
+                new Animate.Entidad.Asset { Id = 3, Nombre = "Pez Koi", Descripcion = "Pez Koi (lindo)", Imagen = "pezkoi.png" }
             };
         }
         public List<Animate.Entidad.Asset> ObtenerAssets()
